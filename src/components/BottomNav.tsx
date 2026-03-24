@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, HardHat, Beer, Video } from "lucide-react";
+import { Home, Beer, Salad, HardHat } from "lucide-react";
 
 const NAV_ITEMS = [
   { href: "/", label: "HQ", icon: Home },
   { href: "/joe", label: "Joe's Bar", icon: Beer },
-  { href: "/videos", label: "Videos", icon: Video },
+  { href: "/meals", label: "Meals", icon: Salad },
   { href: "/dashboard", label: "Work", icon: HardHat },
 ];
 
