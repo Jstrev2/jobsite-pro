@@ -111,28 +111,35 @@ export default function HomePage() {
       </div>
 
       {/* Quick Links */}
-      <div className="grid grid-cols-3 gap-3 mb-4">
+      <div className="grid grid-cols-2 gap-3 mb-4">
         <Link href="/joe">
           <div className="bg-[#12121a] border border-white/10 rounded-xl p-4 text-center hover:bg-[#1a1a25] transition-all active:scale-95">
             <span className="text-3xl block mb-1">🍺</span>
-            <p className="font-bold text-xs">Joe&apos;s Bar</p>
+            <p className="font-bold text-sm">Joe&apos;s Bar</p>
             <p className="text-[10px] text-zinc-500 mt-0.5">
-              {beerCount > 0 ? `${beerCount} deep` : "Sober"}
+              {beerCount > 0 ? `${beerCount} beer${beerCount !== 1 ? "s" : ""} deep` : "Stone cold sober"}
             </p>
+          </div>
+        </Link>
+        <Link href="/rage">
+          <div className="bg-[#12121a] border border-white/10 rounded-xl p-4 text-center hover:bg-[#1a1a25] transition-all active:scale-95">
+            <span className="text-3xl block mb-1">⚡</span>
+            <p className="font-bold text-sm">Rage-O-Meter</p>
+            <p className="text-[10px] text-zinc-500 mt-0.5">Energy drink fury</p>
           </div>
         </Link>
         <Link href="/meals">
           <div className="bg-[#12121a] border border-white/10 rounded-xl p-4 text-center hover:bg-[#1a1a25] transition-all active:scale-95">
             <span className="text-3xl block mb-1">🥗</span>
-            <p className="font-bold text-xs">Joe&apos;s Meals</p>
-            <p className="text-[10px] text-zinc-500 mt-0.5">Eat clean</p>
+            <p className="font-bold text-sm">Joe&apos;s Meals</p>
+            <p className="text-[10px] text-zinc-500 mt-0.5">Eat clean, work hard</p>
           </div>
         </Link>
         <Link href="/videos">
           <div className="bg-[#12121a] border border-white/10 rounded-xl p-4 text-center hover:bg-[#1a1a25] transition-all active:scale-95">
             <span className="text-3xl block mb-1">📺</span>
-            <p className="font-bold text-xs">Break Room</p>
-            <p className="text-[10px] text-zinc-500 mt-0.5">Time wasters</p>
+            <p className="font-bold text-sm">Break Room TV</p>
+            <p className="text-[10px] text-zinc-500 mt-0.5">Certified time wasters</p>
           </div>
         </Link>
       </div>
