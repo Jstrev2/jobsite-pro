@@ -42,7 +42,7 @@ export default function NewEstimatePage() {
 
   const updateLineItem = (idx: number, field: keyof LineItem, value: string | number) => {
     const updated = [...lineItems];
-    (updated[idx] as Record<string, unknown>)[field] = value;
+    (updated[idx] as unknown as Record<string, unknown>)[field] = value;
     if (field === "quantity" || field === "unit_price") {
       updated[idx].total = updated[idx].quantity * updated[idx].unit_price;
     }
