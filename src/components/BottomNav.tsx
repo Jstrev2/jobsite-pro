@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Briefcase, FileText, Calculator, Home } from "lucide-react";
+import { Home, HardHat, Beer, Video } from "lucide-react";
 
 const NAV_ITEMS = [
-  { href: "/", label: "Dashboard", icon: Home },
-  { href: "/jobs", label: "Jobs", icon: Briefcase },
-  { href: "/estimates", label: "Estimates", icon: FileText },
-  { href: "/calculator", label: "Calculator", icon: Calculator },
+  { href: "/", label: "HQ", icon: Home },
+  { href: "/joe", label: "Joe's Bar", icon: Beer },
+  { href: "/videos", label: "Videos", icon: Video },
+  { href: "/dashboard", label: "Work", icon: HardHat },
 ];
 
 export default function BottomNav() {
